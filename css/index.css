@@ -261,23 +261,13 @@ footer {
 .walk .walk-text .btn a {
   display: block;
   font-size: 1.8rem;
-  padding: 3%;
-  width: fit-content;
-  height: fit-content;
+  padding: 10px 20px;
   background-color: #22283A;
   color: #F6F7F8;
   text-decoration: none;
+  border-radius: 5px;
 }
-.walk .walk-text .btn a:hover {
+.walk .walk-text .btn :hover {
   background-color: #F6F7F8;
   color: #22283A;
-}
-.walk .walk-img {
-  width: 46%;
-  margin-left: 4%;
-}
-.walk .walk-img img {
-  width: 100%;
-  height: auto;
-  border-radius: 10px;
 }

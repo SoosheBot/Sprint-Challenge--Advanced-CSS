@@ -65,13 +65,20 @@
 
         .btn {
             a{
-                .button-style(1.8rem,3%,fit-content,fit-content);
-                .button-colors(@btn-bg-color,@porcelain);
+                .button-style(1.8rem,10px 20px,fit-content,fit-content);
+                background-color: @btn-bg-color;
+                color:@porcelain;
                 text-decoration:none;
+                border-radius:5px;
             }
-            a:hover{
-                .button-colors(@porcelain,@btn-bg-color);
+            :hover{
+              background-color:@porcelain;
+              color:@btn-bg-color;
             }
+            // &:hover {
+            //     background-color: lighten(purple, 50%), color:black;
+                
+            //   }
         }
       
 

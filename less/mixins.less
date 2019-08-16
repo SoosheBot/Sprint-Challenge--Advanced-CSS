@@ -1,18 +1,15 @@
+//Mix-ins
+
 .displayFlex(@justify, @align){
     display:flex;
     justify-content:@justify;
     align-items:@align;
   }
-  .button-colors(@background, @text-color){
-    background-color:@background;
-    color:@text-color;
-}
 
 .button-style(@font-size,@padding,@width,@height){
     display:block;
     font-size:@font-size;
     padding:@padding;
-    width:@width;
-    height:@height;
-
+    @width:@width;
+    @height:@height;
 }
