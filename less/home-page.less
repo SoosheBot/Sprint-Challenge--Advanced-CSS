@@ -1,108 +1,80 @@
 //Home page
 .home {
 
-  .intro {
-        
-    h2 {
-      padding: 15px;
-    }
-
-    p {
-      padding:0 15px;
-    }
-  
-  }
-
-  .space-images {
-    .displayFlex(space-between,center);
-    flex-wrap: wrap;
-    width: 100%;
-    padding-left:2%;
-    padding-right:2%;
-    padding-bottom:4%;
-  
-    .blast, .sky, .launch{
-        border-radius:15%;
-    }
-
-    img {
-      width: 28%;
-      margin: 20px 2.5%;
-      border-radius: 20px;
-      height: 100%;
-    }
-  }
-
-  .visit-planets {
-    padding: 15px;
-    }
-
-    h3 {
-      margin-top: 11px;
-    }
-
-    p {
-      margin-top: 13px;
-    }
-  }
-
-  .walk {
-    margin-top: 60px;
-    border-top: 1px solid @main-border-color;
-    padding: 50px 60px;
-    .displayFlex(center,center);
-
-    .walk-text {
-      width: 50%;
-
-      h3 {
-        margin-bottom: 10px;
+    .intro {
+          
+      h2 {
+        padding: 15px;
       }
-
+  
       p {
-        margin-bottom: 26px;
+        padding:0 15px;
       }
-
-      .btn {
-        font:placeholder;
-      }
-    }
-
-    .walk-img {
-      width: 46%;
-      margin-left: 4%;
-      
-      img {
-        width: 100%;
-        height: auto;
-        border-radius: 10px;
-      }//possibly add a closing brace here
-    }
-    .btn{
-      display:block;
-      background:@header-font-color;
-      // color:white;
-      // background:rgb(69, 68, 85);
-      // margin: 0 10px 20px;
-      // padding:10px;
-      // width: 90px;
-      // font-size: 2rem;
-      // border-radius: 5px;
-
     
-  }
-}// home
-
-
-
-
-
-
- 
- 
-
- 
-
+    }
   
+    .space-images {
+      .displayFlex(space-between,center);
+      flex-wrap: wrap;
+      width: 100%;
+      padding-left:2%;
+      padding-right:2%;
+      padding-bottom:4%;
+    
+      .blast, .sky, .launch{
+          border-radius:15%;
+      }
   
+      img {
+        width: 28%;
+        margin: 20px 2.5%;
+        border-radius: 20px;
+        height: 100%;
+      }
+    }
+  
+    .visit-planets {
+      padding: 15px;
+      }
+  
+      h3 {
+        margin-top: 11px;
+      }
+  
+      p {
+        margin-top: 13px;
+      }
+    }
+  
+    .walk {
+      margin-top: 60px;
+      border-top: 1px solid @main-border-color;
+      padding: 50px 60px;
+      .displayFlex(center,center);
+  
+      .walk-text {
+        width: 50%;
+  
+        h3 {
+          margin-bottom: 10px;
+        }
+  
+        p {
+          margin-bottom: 26px;
+        }
 
+        .btn {
+            a{
+                .button-style(1.8rem,3%,fit-content,fit-content);
+                .button-colors(@btn-bg-color,@porcelain);
+                text-decoration:none;
+            }
+            a:hover{
+                .button-colors(@porcelain,@btn-bg-color);
+            }
+        }
+      
+
+      }
+  
+    }//end home
