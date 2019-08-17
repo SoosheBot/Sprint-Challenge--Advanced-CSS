@@ -1,7 +1,17 @@
 //Home page
 .home {
+  @media @phone{
+    max-width:100%;
+  }
+
+    img{
+      width:100%;
+      border-radius:10px;
+    }
 
     .intro {
+
+     
           
       h2 {
         padding: 15px;
@@ -14,27 +24,37 @@
     }
   
     .space-images {
+      @media @phone{
+        .sky, .launch {
+          display:none;
+        }
+        .blast{
+          width:90%;
+        }
+
+      }
       .displayFlex(space-between,center);
-      flex-wrap: wrap;
-      width: 100%;
       padding-left:2%;
       padding-right:2%;
       padding-bottom:4%;
-    
-      .blast, .sky, .launch{
-          border-radius:15%;
-      }
   
       img {
         width: 28%;
         margin: 20px 2.5%;
         border-radius: 20px;
         height: 100%;
+
+       
       }
     }
   
     .visit-planets {
+      @media @phone{
+        
+      }
+
       padding: 15px;
+      padding-bottom:40px;
       }
   
       h3 {
@@ -47,41 +67,75 @@
     }
   
     .walk {
-      margin-top: 60px;
       border-top: 1px solid @main-border-color;
       padding: 50px 60px;
-      .displayFlex(center,center);
-  
+      .displayFlex(space-between,flex-start);  
+      @media @phone{
+        flex-direction:column-reverse;
+        padding:0;
+        margin:0;
+        width:100%;
+      }
+          
+      
+
+      .walk-img{
+        width:47%;
+        border-radius:10px; 
+
+        @media @phone{
+          width:100%;
+          padding-left:2%;
+          padding-right:2%;
+          margin:0;
+
+      }
+    }
       .walk-text {
         width: 50%;
-  
-        h3 {
-          margin-bottom: 10px;
-        }
-  
-        p {
-          margin-bottom: 26px;
-        }
 
+        @media @phone{  
+          width:100%;
+          padding-left:2%;
+          padding-right:2%;
+          margin:0;
+    
+            h3 {
+              margin-bottom: 10px;
+            }
+      
+            p {
+
+              margin-bottom: 26px;
+            }
+        }
+      
         .btn {
+              @media @phone {
+                width:100%;
+                padding:5%;
+              }
+              .button-style(1.8rem,30%,20%);
+              padding:3%;
+              margin-top:5%;
+              background-color: @btn-bg-color;
+              border-radius:5px;
+              text-align:center;
+            }
             a{
-                .button-style(1.8rem,10px 20px,fit-content,fit-content);
-                background-color: @btn-bg-color;
-                color:@porcelain;
-                text-decoration:none;
-                border-radius:5px;
+              text-decoration:none;
+              color:@porcelain;
             }
             :hover{
               background-color:@porcelain;
               color:@btn-bg-color;
             }
-            // &:hover {
-            //     background-color: lighten(purple, 50%), color:black;
-                
-            //   }
         }
       
-
-      }
+    
   
     }//end home
+
+
+       
+       
