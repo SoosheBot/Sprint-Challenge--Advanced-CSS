@@ -1,1 +1,14 @@
-// Mixins Here
+//Mix-ins
+
+.displayFlex(@justify, @align){
+    display:flex;
+    justify-content:@justify;
+    align-items:@align;
+  }
+
+.button-style(@font-size,@width,@height){
+    display:block;
+    font-size:@font-size;
+    width:@width;
+    height:@height;
+}
